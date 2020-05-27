@@ -4,6 +4,7 @@ variables:
 
 stages:
   - build
+  - checking
   - testing
 
 build-docker-container:
@@ -16,21 +17,8 @@ build-docker-container:
     - docker build --pull -t $IMAGE_TAG .
     - docker push $IMAGE_TAG
 
-tests-and-coverage:
-  stage: testing
-  tags:
-      - docker
-  image: $IMAGE_TAG
-  variables:
-    GIT_STRATEGY: none
-    KUBERNETES_MEMORY_REQUEST: 6Gi
-  script:
-    - cd $PACKAGE_DIR
-    - R -e 'devtools::test()'
-    - R -e 'covr::package_coverage(type = c("tests", "examples"), quiet = FALSE)'
-
 package-check:
-  stage: testing
+  stage: checking
   tags:
       - docker
   image: $IMAGE_TAG
@@ -40,3 +28,14 @@ package-check:
   script:
     - cd $PACKAGE_DIR
     - R -e 'devtools::check()'
+
+coverage:
+  stage: testing
+  tags:
+      - docker
+  image: $IMAGE_TAG
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - cd $PACKAGE_DIR
+    - R -e 'covr::package_coverage(type = c("tests", "examples"), quiet = FALSE)'
