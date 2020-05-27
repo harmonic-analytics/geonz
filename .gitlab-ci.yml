@@ -24,7 +24,6 @@ package-check:
   image: $IMAGE_TAG
   variables:
     GIT_STRATEGY: none
-    KUBERNETES_MEMORY_REQUEST: 6Gi
   script:
     - cd $PACKAGE_DIR
     - R -e 'devtools::check()'
