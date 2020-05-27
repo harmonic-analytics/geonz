@@ -6,4 +6,4 @@ COPY DESCRIPTION /geonz/
 
 RUN R -e "remotes::install_deps(dependencies = TRUE)"
 
-COPY ./geonz/
+COPY . /geonz/
