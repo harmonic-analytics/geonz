@@ -96,7 +96,7 @@
 #'
 #' @format A data frame with 29688 rows and 2 variables:
 #' \describe{
-#'   \item{SA1_2018_NAME}{Name of the SA1}
+#'   \item{name}{Name of the SA1}
 #'   \item{geom}{multipolygon of the area
 #'   boundaries, as lat/long in WGS84}
 #'   }
