@@ -1,8 +1,8 @@
 #' Topologically-aware geometry simplification.
 #'
-#' A wrapper around \code{rmapshaper::ms_simplify}, which uses
+#' A wrapper around `rmapshaper::`\code{\link[rmapshaper]{ms_simplify}}, which uses
 #' \href{https://github.com/mbloch/mapshaper}{mapshaper} to simplify polygons.
-#' Also uses rmapshaper::check_sys_mapshaper to automatically use the system
+#' Also uses `rmapshaper::check_sys_mapshaper`` to automatically use the system
 #' mapshaper instead of the bundled mapshaper where possible.
 #'
 #' For examples, see \code{\link[rmapshaper]{ms_simplify}}
@@ -51,11 +51,9 @@
 #'
 #' @return a simplified representation of the geometry in the same class as the
 #'   input
-#' @examples
-#' # See \code{\link[rmapshaper]{ms_simplify}}
 #'
 #' @export
-simplify = function(input,
+ms_simplify = function(input,
                     keep = 0.05,
                     method = NULL,
                     weighting = 0.7,
@@ -66,7 +64,15 @@ simplify = function(input,
                     force_FC = TRUE,
                     drop_null_geometries = TRUE,
                     snap_interval = NULL,
-                    sys = rmapshaper::check_sys_mapshaper(verbose = FALSE)) {
+                    sys = TRUE) {
+
+  # Check for system mapshaper
+  sys = tryCatch({
+    if (sys) {
+      sys = rmapshaper::check_sys_mapshaper(verbose = FALSE)
+    }},
+    error = function(sys) {sys = FALSE}
+  )
 
   rmapshaper::ms_simplify(
     input,
