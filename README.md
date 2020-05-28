@@ -7,6 +7,8 @@
 
 <!-- badges: end -->
 
+## Overview
+
 This package provides datasets of the annually released geographic area
 boundaries of New Zealand. The datasets are stored as simple features
 data tables.
