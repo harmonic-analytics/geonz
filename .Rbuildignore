@@ -4,3 +4,5 @@
 Dockerfile
 .dockerignore
 ^\.gitlab-ci\.yml$
+^data-raw$
+^README\.Rmd$
