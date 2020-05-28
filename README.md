@@ -1,9 +1,13 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# geonz <img src = 'inst/figures/hex-geonz.png' align='right' height='139' />
+# geonz <a href='https://gitlab.harmonic.co.nz/harmonic/packages/geonz'><img src = 'inst/figures/hex-geonz.png' align='right' height='139' /></a>
 
 <!-- badges: start -->
+
+[![pipeline-status](https://gitlab.harmonic.co.nz/harmonic/packages/geonz/badges/master/pipeline.svg)](https://gitlab.harmonic.co.nz/harmonic/packages/geonz/pipelines)
+[![coverage
+report](https://gitlab.harmonic.co.nz/harmonic/packages/geonz/badges/master/coverage.svg)](https://gitlab.harmonic.co.nz/harmonic/packages/geonz/commits/master)
 
 <!-- badges: end -->
 
