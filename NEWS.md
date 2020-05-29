@@ -2,6 +2,7 @@
 
 * First package release with 2018 boundaries for geographic areas of statistical area 1, statistical area 2, ward, territorial authority and regional councils.
 * Both clipped and full multipolygon versions of the geographic areas are included.
+* Add simplify function (from `rmapshaper::ms_simplify`)
 
 # geonz 0.0.0.9000
 
