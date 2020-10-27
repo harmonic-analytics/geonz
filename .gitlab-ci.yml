@@ -16,7 +16,7 @@ build-docker-container:
   before_script:
     - touch .Renviron
   script:
-    - docker build --build-arg GITLAB_PAT=$GITAB_PAT --pull -t $IMAGE_TAG .
+    - docker build --build-arg GITLAB_PAT=$GITLAB_PAT --pull -t $IMAGE_TAG .
     - docker push $IMAGE_TAG
 
 package-check:
