@@ -6,16 +6,20 @@ Authors@R:
            family = "Lie",
            role = c("aut", "cre"),
            email = "matthew@harmonic.co.nz")
-Description: Provides functions and access to various formats of NZ geospatial data.
+Description: Provides functions and access to various formats of
+    NZ geospatial data.
 License: MIT + file LICENSE
+Depends: 
+    R (>= 2.10)
+Imports: 
+    db.geonz,
+    rmapshaper,
+    sf
+Suggests: 
+    testthat
+Remotes:
+    git@gitlab.harmonic.co.nz:harmonic/databases/db-geonz.git
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0
-Suggests: 
-    testthat
-Imports: 
-    sf,
-    rmapshaper
-Depends: 
-    R (>= 2.10)
