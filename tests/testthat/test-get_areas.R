@@ -33,4 +33,8 @@ test_that("get_areas returns all dataframes without loss of data", {
   expect_equal(nrow(get_areas(area_type = "sa1", clipped = TRUE)), 29688)
 })
 
-  # expect_equal(nrow(area_hierarchy_2018), 29889)
+context("Testing get_area_hierarchy function")
+
+test_that("get_area_hierarchy returns the full dataframe", {
+  expect_equal(nrow(get_area_hierarchy()), 29889)
+})

@@ -29,3 +29,12 @@ get_areas = function(area_type, clipped=TRUE) {
   return (res)
 
 }
+
+
+#' Access the area hierarchy
+#'
+#' @return A dataframe with the area hierarchy
+#' @export
+get_area_hierarchy = function() {
+  return (db.geonz::area_hierarchy_2018)
+}
