@@ -18,7 +18,7 @@ Imports:
 Suggests: 
     testthat
 Remotes:
-    git@gitlab.harmonic.co.nz:harmonic/databases/db-geonz.git
+    harmonic-analytics/db-geonz
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
