@@ -14,7 +14,7 @@ build-docker-container:
       - dockerbuild
       - wellington
   script:
-    - docker build --pull -t $IMAGE_TAG .
+    - docker build  --pull -t $IMAGE_TAG .
     - docker push $IMAGE_TAG
 
 package-check:
