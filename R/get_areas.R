@@ -1,12 +1,10 @@
 #' Function to access geographic areas from the db.geonz package
 #'
-#' @param area_type
-#' @param clipped
+#' @param area_type A string of the geographic area type to be selected. Must be one of sa1, sa2, ward, ta, rc
+#' @param clipped if TRUE, returns the geographic areas clipped to the New Zealand Coastline
 #'
-#' @return
+#' @return A sf dataframe with three columns: the area code, the area name and the area geometry
 #' @export
-#'
-#' @examples
 get_areas = function(area_type, clipped=TRUE) {
   # Make sure an area_type is provided
   assertthat::assert_that(!is.null(area_type), msg = "Must provide an area_type")
