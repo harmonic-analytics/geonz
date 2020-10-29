@@ -7,3 +7,4 @@ apt_packages:
   - libgdal-dev
   - libgeos-dev
   - libproj-dev
+  - libv8-dev
