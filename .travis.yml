@@ -8,3 +8,4 @@ apt_packages:
   - libgeos-dev
   - libproj-dev
   - libv8-dev
+  - libprotobuf-dev
