@@ -7,3 +7,4 @@ Dockerfile
 ^data-raw$
 ^README\.Rmd$
 ^\.travis\.yml$
+^\.github$

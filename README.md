@@ -5,8 +5,9 @@
 
 <!-- badges: start -->
 
-[![Travis build
-status](https://travis-ci.org/harmonic-analytics/geonz.svg?branch=master)](https://travis-ci.org/harmonic-analytics/geonz)
+[![R build
+status](https://github.com/harmonic-analytics/geonz/workflows/R-CMD-check/badge.svg)](https://github.com/harmonic-analytics/geonz/actions)
+[![Coverage](https://github.com/harmonic-analytics/geonz/workflows/test-coverage/badge.svg)](https://github.com/harmonic-analytics/geonz/actions)
 <!-- badges: end -->
 
 ## Overview
