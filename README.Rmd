@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![R build status](https://github.com/harmonic-analytics/geonz/workflows/R-CMD-check/badge.svg)](https://github.com/harmonic-analytics/geonz/actions)
-[![Coverage](https://github.com/harmonic-analytics/geonz/workflows/test-coverage/badge.svg)](https://github.com/harmonic-analytics/geonz/actions)
+[![codecov](https://codecov.io/gh/harmonic-analytics/geonz/branch/master/graph/badge.svg?token=E2YH3H8I20)](https://codecov.io/gh/harmonic-analytics/geonz)
 <!-- badges: end -->
 
 ## Overview
